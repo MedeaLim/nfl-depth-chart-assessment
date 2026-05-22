@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="NFLDepthChart.Api/NFLDepthChart.Api.csproj" />
+  <Project Path="NFLDepthChart.Tests/NFLDepthChart.Tests.csproj" />
+</Solution>

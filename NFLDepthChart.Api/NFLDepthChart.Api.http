@@ -1,0 +1,6 @@
+@NFLDepthChart.Api_HostAddress = http://localhost:5237
+
+GET {{NFLDepthChart.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

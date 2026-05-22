@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NFL Depth Chart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>NFL Depth Chart</h1>
+    <p class="subtitle">Simple frontend demo for the ASP.NET Core backend API</p>
+
+    <section class="card">
+      <h2>Add Player</h2>
+
+      <label>
+        Position
+        <input id="addPosition" type="text" placeholder="Example: QB" />
+      </label>
+
+      <label>
+        Player Number
+        <input id="addPlayerNumber" type="number" placeholder="Example: 12" />
+      </label>
+
+      <label>
+        Player Name
+        <input id="addPlayerName" type="text" placeholder="Example: Tom Brady" />
+      </label>
+
+      <label>
+        Depth
+        <input id="addDepth" type="number" placeholder="Example: 0" />
+      </label>
+
+      <button id="addPlayerBtn">Add Player</button>
+    </section>
+
+    <section class="card">
+      <h2>Display Full Depth Chart</h2>
+
+      <label>
+        Position
+        <input id="chartPosition" type="text" placeholder="Example: QB" />
+      </label>
+
+      <button id="getDepthChartBtn">Get Depth Chart</button>
+      <pre id="depthChartResult"></pre>
+    </section>
+
+    <section class="card">
+      <h2>Get Backups</h2>
+
+      <label>
+        Position
+        <input id="backupPosition" type="text" placeholder="Example: QB" />
+      </label>
+
+      <label>
+        Player Number
+        <input id="backupPlayerNumber" type="number" placeholder="Example: 12" />
+      </label>
+
+      <button id="getBackupsBtn">Get Backups</button>
+      <pre id="backupsResult"></pre>
+    </section>
+
+    <section class="card">
+      <h2>Remove Player</h2>
+
+      <label>
+        Position
+        <input id="removePosition" type="text" placeholder="Example: QB" />
+      </label>
+
+      <label>
+        Player Number
+        <input id="removePlayerNumber" type="number" placeholder="Example: 12" />
+      </label>
+
+      <button id="removePlayerBtn">Remove Player</button>
+    </section>
+
+    <p id="message"></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
